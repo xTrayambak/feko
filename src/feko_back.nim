@@ -1,7 +1,7 @@
 ## Feko's backend service
 ##
 ## Copyright (C) 2025 Trayambak Rai
-import std/[atomics, json, options, os, random, strutils, times]
+import std/[atomics, json, options, os, random, strutils, times, tables]
 import pkg/mummy, pkg/mummy/routers
 import pkg/[chronicles, kiwi, jsony, shakar, toml_serialization, unicody, uuid4]
 import ./[argparser, config]
