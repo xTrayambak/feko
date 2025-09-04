@@ -1,0 +1,123 @@
+.option-palette button
+{
+	all: unset;
+	cursor: pointer;
+}
+
+pre, textarea, .powered-by-txt
+{
+	font-weight: 900;
+	font-family: "Source Code Pro", monospace;
+	font-style: normal;
+	font-size: 1.99rem;
+	color: rgb(255, 255, 255);
+}
+
+textarea
+{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	resize: none;
+	background-color: #3c3836;
+}
+
+body
+{
+	background-color: #3c3836;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.option-palette
+{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: rgba(50, 46, 44, 0.78);
+	padding: 10px 15px;
+	border-radius: 8px;
+	z-index: 10;
+	font-size: 16px;
+	overflow: hidden;
+	border-radius: 8px;
+	backdrop-filter: blur(10px);
+}
+
+.powered-by-txt
+{
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+.powered-by-txt a
+{
+	color: rgb(225, 225, 225);
+	text-decoration: none;
+}
+
+.option-palette button
+{
+	background: rgba(50, 46, 44, 0.85);
+}
+
+.option-palette .fa-lock
+{
+	margin-right: 0.5rem;
+}
+
+.option-palette input
+{
+	background: rgba(50, 46, 44, 0.85);
+	color: rgb(255, 255, 255);
+}
+
+.password-dialog input
+{
+	background: rgba(255, 255, 255, 0.85);
+	color: rgb(0, 0, 0);
+}
+
+.option-palette i { color: rgb(255, 255, 255); }
+
+.censor
+{
+	backdrop-filter: blur(16px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9998;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+.password-dialog
+{
+	z-index: 9999;
+	border-radius: 8px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.83);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	width: 500px;
+	min-height: 250px;
+	text-align: center;
+}
+
+.password-dialog h1
+{
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.password-dialog #redir-message
+{
+	color: rgb(255, 0, 0);
+	font-weight: 400;
+}

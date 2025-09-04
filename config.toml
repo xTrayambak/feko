@@ -1,0 +1,12 @@
+[backend]
+port = 8080
+address = "localhost"
+slug_algorithm = "alphanum"
+max_paste_size = 80000
+
+[frontend]
+port = 8081
+address = "localhost"
+
+[store]
+flush_frequency = 60.0
