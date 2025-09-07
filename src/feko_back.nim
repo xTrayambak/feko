@@ -109,8 +109,7 @@ proc addNewPaste(data: NewPasteRequest, config: Config): string {.gcsafe.} =
 proc getPaste(slug: string, password: Option[string]): Paste =
   var store = cast[ptr kiwi.Store](pasteStore)[]
 
-  for pasteSlug in store:
-    let (slugKey, slugValue) = pasteSlug
+  for slugKey, slugValue in store:
     if slugKey != slug:
       continue
 
